@@ -1,0 +1,1684 @@
+<!doctype html>
+<html lang="fr-FR">
+<head><meta charset="utf-8">
+    
+    
+    
+
+
+
+    
+    
+    
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Visual Therapy Atlas | 250 cartes mentales de psychologie</title>
+<meta name="description" content="Un atlas visuel de plus de 250 cartes pour comprendre les émotions, les schémas, les comportements et les relations. PDF en français, accès à vie, 10 €.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#183D46">
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Visual Therapy Atlas">
+<meta property="og:title" content="Visual Therapy Atlas | Cartes mentales de psychologie">
+<meta property="og:description" content="Un atlas visuel de plus de 250 cartes pour comprendre les émotions, les schémas, les comportements et les relations. PDF en français, accès à vie, 10 €.">
+
+<meta property="og:image" content="assets/mockup-principal-fr.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Visual Therapy Atlas | Cartes mentales de psychologie">
+<meta name="twitter:description" content="Un atlas visuel de plus de 250 cartes pour comprendre les émotions, les schémas, les comportements et les relations. PDF en français, accès à vie, 10 €.">
+<meta name="twitter:image" content="assets/mockup-principal-fr.webp">
+
+
+
+
+
+
+
+
+<link rel="preload" as="image" href="assets/mockup-principal-fr.webp">
+
+<style>
+/* ============================================================
+   TOKENS
+   ============================================================ */
+:root{
+  --bg:#F7F6F2;
+  --bg-alt:#EFEDE7;
+  --surface:#FFFFFF;
+  --text:#202525;
+  --muted:#5D6664;
+  --primary:#183D46;
+  --primary-soft:#2B565F;
+  --secondary:#7E988A;
+  --sand:#C2AE95;
+  --border:rgba(32,37,37,.14);
+  --border-soft:rgba(32,37,37,.08);
+  --shadow:0 1px 2px rgba(24,61,70,.04), 0 8px 28px rgba(24,61,70,.06);
+  --shadow-lift:0 2px 6px rgba(24,61,70,.06), 0 18px 44px rgba(24,61,70,.10);
+  --serif:"DM Serif Display", Georgia, "Times New Roman", serif;
+  --sans:"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --wrap:1220px;
+  --radius:12px;
+  --radius-lg:16px;
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+
+/* ============================================================
+   BASE
+   ============================================================ */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+html:focus-within{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--sans);
+  font-size:17px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img,video{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+ul{margin:0;padding:0;list-style:none}
+
+h1,h2,h3,h4{font-family:var(--serif);font-weight:400;letter-spacing:-.012em;line-height:1.14;margin:0}
+h1{font-size:clamp(2.5rem,5.4vw,4.1rem)}
+h2{font-size:clamp(1.95rem,3.5vw,3rem)}
+h3{font-size:clamp(1.35rem,2vw,1.7rem);line-height:1.22}
+h4{font-size:1.15rem;line-height:1.3}
+p{margin:0 0 1.1em}
+p:last-child{margin-bottom:0}
+
+:focus-visible{outline:2px solid var(--primary);outline-offset:3px;border-radius:4px}
+
+.wrap{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 28px}
+.wrap-narrow{max-width:820px;margin:0 auto}
+.section{padding:clamp(56px,6vw,92px) 0}
+.section--alt{background:var(--bg-alt)}
+.section--tight{padding-top:clamp(52px,6vw,80px)}
+
+.eyebrow{
+  font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--secondary);margin:0 0 20px;display:block;
+}
+.eyebrow--light{color:rgba(247,246,242,.62)}
+.lead{font-size:clamp(1.06rem,1.5vw,1.22rem);color:var(--muted);max-width:62ch}
+.muted{color:var(--muted)}
+.rule{height:1px;background:var(--border-soft);border:0;margin:0}
+
+/* Botões */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  background:var(--primary);color:#F7F6F2;
+  font-size:1rem;font-weight:600;letter-spacing:.01em;
+  padding:17px 34px;border-radius:8px;
+  transition:background .25s var(--ease), transform .25s var(--ease);
+}
+.btn:hover{background:var(--primary-soft);transform:translateY(-1px)}
+.btn--light{background:#F7F6F2;color:var(--primary)}
+.btn--light:hover{background:#fff}
+.btn--lg{padding:21px 44px;font-size:1.06rem}
+.btn--ghost{
+  background:transparent;color:var(--primary);
+  border:1px solid var(--border);padding:11px 22px;font-size:.9rem;border-radius:8px;
+}
+.btn--ghost:hover{background:var(--primary);color:#F7F6F2;border-color:var(--primary)}
+.microcopy{font-size:.85rem;color:var(--muted);margin-top:16px}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .7s var(--ease), transform .7s var(--ease)}
+.reveal.is-visible{opacity:1;transform:none}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+.header{
+  position:fixed;top:0;left:0;right:0;z-index:80;
+  transform:translateY(-100%);
+  transition:transform .35s var(--ease), background .35s var(--ease);
+  background:rgba(247,246,242,.94);
+  border-bottom:1px solid var(--border-soft);
+  backdrop-filter:saturate(1.2) blur(6px);
+}
+.header.is-stuck{transform:translateY(0)}
+.header__inner{display:flex;align-items:center;justify-content:space-between;gap:24px;height:70px}
+.wordmark{font-family:var(--serif);font-size:1.06rem;letter-spacing:.01em;color:var(--primary);white-space:nowrap}
+.wordmark span{display:block;font-family:var(--sans);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--secondary);margin-top:2px}
+.nav{display:flex;align-items:center;gap:30px}
+.nav a{font-size:.9rem;color:var(--muted);transition:color .2s var(--ease)}
+.nav a:hover{color:var(--primary)}
+.header__cta{display:inline-flex}
+.burger{display:none;width:44px;height:44px;align-items:center;justify-content:center;margin-right:-10px}
+.burger span{display:block;width:22px;height:1.5px;background:var(--text);position:relative;transition:background .2s}
+.burger span::before,.burger span::after{
+  content:"";position:absolute;left:0;width:22px;height:1.5px;background:var(--text);
+  transition:transform .28s var(--ease), top .28s var(--ease);
+}
+.burger span::before{top:-7px}
+.burger span::after{top:7px}
+.burger[aria-expanded="true"] span{background:transparent}
+.burger[aria-expanded="true"] span::before{top:0;transform:rotate(45deg)}
+.burger[aria-expanded="true"] span::after{top:0;transform:rotate(-45deg)}
+
+.mobile-menu{
+  display:none;position:fixed;inset:70px 0 auto 0;z-index:79;
+  background:var(--bg);border-bottom:1px solid var(--border);
+  padding:22px 28px 30px;
+}
+.mobile-menu.is-open{display:block}
+.mobile-menu a{display:block;padding:14px 0;font-size:1.05rem;border-bottom:1px solid var(--border-soft)}
+.mobile-menu .btn{width:100%;margin-top:22px}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{padding:clamp(48px,6vw,72px) 0 clamp(48px,5vw,72px)}
+.hero__grid{display:flex;flex-direction:column;align-items:center;text-align:center}
+.hero h1{margin:0 0 22px}
+.hero__head{order:1;max-width:940px}
+.hero__body{order:2;max-width:660px;margin-top:6px}
+.hero__figure{order:3;position:relative;width:100%;margin:clamp(44px,5vw,64px) 0 0}
+.hero__sub{font-family:var(--sans);font-size:clamp(1.12rem,1.7vw,1.35rem);font-weight:400;line-height:1.5;color:var(--muted);margin:0 auto;max-width:52ch}
+.hero__text{color:var(--muted);margin:0 auto 34px}
+.hero__figure img{width:100%;border-radius:0;box-shadow:none}
+
+/* ============================================================
+   INTRO
+   ============================================================ */
+.intro__head{max-width:900px}
+.intro__highlight{
+  font-family:var(--serif);font-size:clamp(1.3rem,2.2vw,1.75rem);line-height:1.4;
+  margin:30px 0 26px;padding-left:26px;border-left:2px solid var(--secondary);
+}
+.intro__highlight strong{font-weight:400;color:var(--primary)}
+.three-pages{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:clamp(46px,5vw,72px)}
+.three-pages figure{margin:0}
+.three-pages img{width:100%;border:1px solid var(--border-soft);border-radius:var(--radius);box-shadow:var(--shadow);background:#fff}
+.three-pages figcaption{font-size:.82rem;color:var(--muted);margin-top:12px;letter-spacing:.02em}
+
+/* ============================================================
+   GALERIA
+   ============================================================ */
+.gallery__item{margin:0}
+
+/* Lightbox */
+.lightbox{
+  position:fixed;inset:0;z-index:100;display:none;
+  background:rgba(24,37,37,.92);padding:28px;
+  align-items:center;justify-content:center;
+}
+.lightbox.is-open{display:flex}
+.lightbox__figure{margin:0;max-width:min(920px,92vw);text-align:center}
+.lightbox__figure img{max-height:80vh;width:auto;margin:0 auto;border-radius:8px;background:#fff}
+.lightbox__cap{color:rgba(247,246,242,.82);font-size:.9rem;margin-top:16px;letter-spacing:.04em}
+.lightbox__btn{
+  position:absolute;top:50%;transform:translateY(-50%);
+  width:52px;height:52px;border-radius:50%;
+  background:rgba(247,246,242,.12);color:#F7F6F2;
+  display:flex;align-items:center;justify-content:center;font-size:1.4rem;
+  transition:background .25s var(--ease);
+}
+.lightbox__btn:hover{background:rgba(247,246,242,.24)}
+.lightbox__btn--prev{left:20px}
+.lightbox__btn--next{right:20px}
+.lightbox__close{position:absolute;top:20px;right:20px;width:48px;height:48px;border-radius:50%;color:#F7F6F2;background:rgba(247,246,242,.12);font-size:1.2rem;display:flex;align-items:center;justify-content:center}
+.lightbox__close:hover{background:rgba(247,246,242,.24)}
+
+/* ============================================================
+   VÍDEO
+   ============================================================ */
+.video-block{max-width:960px;margin:44px auto 0}
+.video-frame{
+  position:relative;border-radius:var(--radius-lg);overflow:hidden;
+  background:var(--bg-alt);border:1px solid var(--border-soft);box-shadow:var(--shadow-lift);
+}
+.video-frame video{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.video-facts{display:flex;flex-wrap:wrap;justify-content:center;gap:0 44px;margin-top:26px;text-align:center}
+.video-facts li{font-size:.9rem;color:var(--muted);padding:6px 0}
+.video-facts li strong{font-family:var(--serif);font-weight:400;color:var(--text);margin-right:6px}
+
+/* ============================================================
+   ANATOMIA
+   ============================================================ */
+.anatomy{display:grid;grid-template-columns:1.35fr .65fr;gap:clamp(28px,3.5vw,52px);align-items:center;margin-top:40px}
+.anatomy__figure{position:sticky;top:100px;margin:0}
+.anatomy__figure img{width:100%;border:0;border-radius:0;box-shadow:none;background:none}
+.steps{counter-reset:none}
+.steps{display:grid;grid-template-columns:1fr 1fr;gap:0 32px}
+.steps li{display:grid;grid-template-columns:40px 1fr;gap:12px;padding:16px 0;border-bottom:1px solid var(--border-soft)}
+.steps li:nth-child(1),.steps li:nth-child(2){padding-top:0}
+.steps li:nth-child(5),.steps li:nth-child(6){border-bottom:0}
+.steps__num{font-family:var(--serif);font-size:1.4rem;color:var(--secondary);line-height:1.1}
+.steps h3{font-size:1.02rem;font-family:var(--sans);font-weight:600;letter-spacing:0;margin-bottom:3px}
+.steps p{font-size:.92rem;line-height:1.5;color:var(--muted);margin:0}
+@media (max-width:680px){
+  .steps{grid-template-columns:1fr}
+  .steps li:nth-child(2){padding-top:16px}
+  .steps li:nth-child(5){border-bottom:1px solid var(--border-soft)}
+}
+
+/* ============================================================
+   QUATRO FORMATOS
+   ============================================================ */
+.kinds{display:block;margin-top:44px}
+.kind{
+  display:grid;grid-template-columns:1.15fr .85fr;
+  gap:clamp(30px,4vw,64px);align-items:center;
+  background:none;border:0;border-radius:0;padding:clamp(34px,4vw,52px) 0;
+  border-bottom:1px solid var(--border-soft);
+}
+.kind:last-child{border-bottom:0;padding-bottom:0}
+.kind:first-child{padding-top:0}
+.kind:nth-child(even) .kind__media{order:2}
+.kind__media{background:none;border:0;padding:0;min-height:0;display:block}
+.kind__media img{width:100%;max-height:none;height:auto;box-shadow:none;border-radius:0}
+.kind__body{padding:0;display:flex;flex-direction:column;gap:12px}
+.kind__count{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--clay)}
+.kind h3{font-family:var(--serif);font-size:clamp(1.6rem,2.6vw,2.15rem);font-weight:400;letter-spacing:-.01em}
+.kind p{font-size:1.02rem;line-height:1.55;margin:0}
+.kind__list{margin-top:2px}
+.kind__list li{
+  position:relative;padding:8px 0 8px 28px;font-size:1rem;line-height:1.45;color:var(--text);
+}
+.kind__list li::before{
+  content:"";position:absolute;left:2px;top:14px;width:11px;height:6px;
+  border-left:2px solid var(--clay);border-bottom:2px solid var(--clay);
+  transform:rotate(-45deg);
+}
+@media (max-width:820px){
+  .kind{grid-template-columns:1fr;gap:22px;padding:32px 0}
+  .kind:nth-child(even) .kind__media{order:0}
+}
+
+/* ============================================================
+   ÁREAS
+   ============================================================ */
+.areas{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:52px}
+.area-card{
+  background:var(--surface);border:1px solid var(--border-soft);border-radius:var(--radius);
+  padding:28px 26px 26px;position:relative;overflow:hidden;
+  transition:box-shadow .3s var(--ease), transform .3s var(--ease);
+}
+.area-card:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
+.area-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--tint,var(--secondary));opacity:.65}
+.area-card__top{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:14px}
+.area-card__num{font-family:var(--serif);font-size:1.5rem;color:var(--tint,var(--secondary))}
+.area-card__count{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.area-card h3{font-size:1.18rem;font-family:var(--sans);font-weight:600;letter-spacing:-.005em;margin-bottom:12px}
+.area-card p{font-size:.92rem;color:var(--muted);margin:0}
+
+/* ============================================================
+   SUMÁRIO (ACCORDION)
+   ============================================================ */
+.summary-list{margin-top:46px;border-top:1px solid var(--border)}
+.acc{border-bottom:1px solid var(--border)}
+.summary-list h3,.faq h3{font-family:var(--sans);font-weight:400;margin:0}
+.acc__trigger{
+  width:100%;display:flex;align-items:center;gap:18px;
+  padding:20px 4px;text-align:left;font-family:var(--sans);
+  transition:color .2s var(--ease);
+}
+.acc__trigger:hover{color:var(--primary)}
+.acc__index{font-family:var(--sans);font-size:.92rem;font-weight:600;letter-spacing:.06em;color:var(--secondary);min-width:30px}
+.acc__title{
+  flex:1;font-family:var(--sans) !important;font-size:1.04rem;font-weight:500;
+  letter-spacing:0;text-transform:none;line-height:1.35;color:var(--text);
+}
+.acc__badge{font-size:.78rem;letter-spacing:.02em;text-transform:none;color:var(--muted);white-space:nowrap}
+.acc__arrow{width:14px;height:14px;border-right:1.5px solid var(--muted);border-bottom:1.5px solid var(--muted);transform:rotate(45deg) translate(-3px,-3px);transition:transform .3s var(--ease);flex:none}
+.acc__trigger[aria-expanded="true"] .acc__arrow{transform:rotate(225deg) translate(-3px,-3px)}
+.acc__panel{overflow:hidden;height:0;transition:height .35s var(--ease)}
+.acc__inner{padding:2px 4px 30px}
+.acc__inner p{font-size:.98rem;color:var(--muted)}
+.maps{display:grid;grid-template-columns:repeat(2,1fr);gap:2px 40px}
+.maps li{display:flex;gap:14px;padding:9px 0;font-size:.97rem;border-bottom:1px solid var(--border-soft)}
+.maps li b{font-weight:400;color:var(--secondary);min-width:32px;font-variant-numeric:tabular-nums}
+.summary-note{margin-top:38px;font-family:var(--serif);font-size:1.2rem;color:var(--primary)}
+
+/* ============================================================
+   ÍNDICE INTELIGENTE
+   ============================================================ */
+.smart{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(38px,5vw,68px);align-items:center;margin-top:48px}
+.smart__figure{margin:0}
+.smart__figure img{width:100%;border:1px solid var(--border-soft);border-radius:var(--radius);box-shadow:var(--shadow-lift);background:#fff}
+.situation{background:var(--surface);border:1px solid var(--border-soft);border-radius:var(--radius);padding:24px 26px;margin-bottom:16px}
+.situation h3{font-family:var(--serif);font-size:1.24rem;margin-bottom:14px}
+.situation ul{display:flex;flex-wrap:wrap;gap:8px 10px}
+.situation li{font-size:.88rem;color:var(--primary);background:var(--bg-alt);border-radius:6px;padding:6px 12px}
+.smart__close{margin-top:26px;font-family:var(--serif);font-size:1.16rem;color:var(--primary)}
+
+/* ============================================================
+   DOIS USOS
+   ============================================================ */
+.uses{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,3.4vw,48px);margin-top:52px}
+.use{background:var(--surface);border:1px solid var(--border-soft);border-radius:var(--radius-lg);overflow:hidden}
+.use img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.use__body{padding:32px 32px 36px}
+.use__body h3{font-size:1.5rem;margin-bottom:16px}
+.checklist li{position:relative;padding-left:24px;padding-block:7px;font-size:.98rem;color:var(--muted);border-bottom:1px solid var(--border-soft)}
+.checklist li:last-child{border-bottom:0}
+.checklist li::before{content:"";position:absolute;left:2px;top:17px;width:7px;height:7px;border-radius:50%;background:var(--secondary)}
+.notice{
+  margin-top:44px;border:1px solid var(--border);border-radius:var(--radius);
+  padding:26px 30px;background:transparent;display:grid;grid-template-columns:210px 1fr;gap:24px;
+}
+.notice b{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--secondary)}
+.notice p{font-size:.94rem;color:var(--muted);margin:0}
+
+/* ============================================================
+   PROCESSO EDITORIAL
+   ============================================================ */
+.timeline{display:grid;grid-template-columns:repeat(6,1fr);gap:0;margin:56px 0 40px;border-top:1px solid var(--border)}
+.timeline li{padding:26px 22px 30px 0;position:relative}
+.timeline li::before{content:"";position:absolute;top:-4px;left:0;width:7px;height:7px;border-radius:50%;background:var(--primary)}
+.timeline__step{font-size:.72rem;letter-spacing:.12em;color:var(--secondary);display:block;margin-bottom:10px}
+.timeline__name{font-family:var(--serif);font-size:1.16rem;line-height:1.25}
+
+/* ============================================================
+   REVISOR
+   ============================================================ */
+.reviewer{display:grid;grid-template-columns:300px 1fr;gap:clamp(30px,4vw,56px);align-items:center;margin-top:44px}
+.reviewer img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:var(--radius)}
+.reviewer__name{font-family:var(--serif);font-size:1.6rem;margin-bottom:6px}
+.reviewer__meta{font-size:.9rem;color:var(--secondary);letter-spacing:.06em;margin-bottom:18px}
+
+/* ============================================================
+   REFERÊNCIAS
+   ============================================================ */
+.refs{display:flex;flex-wrap:wrap;gap:10px 12px;background:none;border:0;margin-top:26px}
+.refs li{background:none;padding:0;display:flex;align-items:baseline;gap:8px;
+  border:1px solid var(--border);border-radius:999px;padding:8px 16px;font-size:.9rem}
+.refs__name{font-family:var(--sans);font-size:.9rem;font-weight:500;line-height:1.3;margin:0;color:var(--text)}
+.refs__line{font-size:.82rem;color:var(--muted);margin:0}
+.refs-note{margin-top:34px;max-width:62ch;color:var(--muted)}
+.disclaimer{font-size:.82rem;color:var(--muted);border-left:2px solid var(--border);padding-left:18px;margin-top:26px;max-width:70ch}
+
+/* ============================================================
+   FORMATOS
+   ============================================================ */
+.formats{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(38px,5vw,70px);align-items:center;margin-top:48px}
+.formats__figure img{width:100%;border-radius:var(--radius);box-shadow:var(--shadow-lift)}
+.formats__list li{padding:22px 0;border-bottom:1px solid var(--border-soft)}
+.formats__list li:first-child{padding-top:0}
+.formats__list h3{font-size:1.12rem;font-family:var(--sans);font-weight:600;margin-bottom:4px}
+.formats__list p{font-size:.95rem;color:var(--muted);margin:0}
+.specs-table{width:100%;border-collapse:collapse;margin-top:52px;font-size:.96rem}
+.specs-table th,.specs-table td{text-align:left;padding:16px 8px;border-bottom:1px solid var(--border-soft)}
+.specs-table th{width:230px;font-weight:500;color:var(--muted)}
+.specs-table tr:first-child th,.specs-table tr:first-child td{border-top:1px solid var(--border)}
+
+/* ============================================================
+   INCLUSO
+   ============================================================ */
+.stack{margin-top:40px;border-top:0;display:flex;flex-direction:column;gap:18px}
+.stack__item{
+  display:grid;grid-template-columns:260px 1fr;gap:clamp(24px,3vw,44px);align-items:center;
+  padding:26px 30px;border:1.5px solid var(--clay);border-radius:var(--radius-lg);
+  background:var(--surface);
+}
+.stack__item img{width:100%;border-radius:12px;box-shadow:none}
+.stack__label{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--clay);display:block;margin-bottom:8px}
+.stack__item h3{margin-bottom:8px;font-size:1.4rem}
+.stack__item p{color:var(--muted);max-width:52ch;margin:0}
+@media (max-width:900px){
+  .stack__item{grid-template-columns:1fr;gap:18px;padding:22px 22px 26px}
+}
+/* variante bônus */
+.stack__item--bonus{border-color:var(--deep);position:relative}
+.stack__label--bonus{
+  display:inline-block;background:var(--deep);color:#F4EDE4;
+  font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;
+  padding:5px 12px;border-radius:999px;margin-bottom:10px;
+}
+.stack__item--noimg{grid-template-columns:1fr}
+
+/* ============================================================
+   COMPLEMENTAR
+   ============================================================ */
+.extra{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,5vw,64px);align-items:center;margin-top:44px}
+.extra img{width:100%;border-radius:var(--radius);box-shadow:var(--shadow-lift)}
+.approach-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.approach-list li{font-size:.9rem;border:1px solid var(--border);border-radius:6px;padding:8px 14px;color:var(--primary)}
+
+/* ============================================================
+   DEPOIMENTOS
+   ============================================================ */
+.testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
+.testimonial{background:var(--surface);border:1px solid var(--border-soft);border-radius:var(--radius);padding:28px 26px;display:flex;flex-direction:column;gap:16px;min-height:230px}
+.testimonial__stars{font-size:.85rem;letter-spacing:.22em;color:var(--secondary)}
+.testimonial__text{font-size:1rem;color:var(--muted);flex:1;margin:0}
+.testimonial__person{display:flex;align-items:center;gap:12px;border-top:1px solid var(--border-soft);padding-top:16px}
+.testimonial__avatar{width:40px;height:40px;border-radius:50%;background:var(--bg-alt);flex:none;object-fit:cover}
+.testimonial__name{font-size:.95rem;font-weight:500}
+.testimonial__role{font-size:.82rem;color:var(--muted)}
+
+/* ============================================================
+   OFERTA
+   ============================================================ */
+.offer{background:var(--primary);color:#F7F6F2}
+.offer h2{color:#fff}
+.offer__grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,5vw,76px);align-items:center}
+.offer__figure img{width:100%;border-radius:var(--radius-lg);box-shadow:0 24px 60px rgba(0,0,0,.24)}
+.offer__list{margin:30px 0 36px}
+.offer__list li{position:relative;padding-left:28px;padding-block:9px;font-size:1rem;color:rgba(247,246,242,.9);border-bottom:1px solid rgba(247,246,242,.14)}
+.offer__list li::before{content:"";position:absolute;left:2px;top:19px;width:9px;height:5px;border-left:1.5px solid var(--green-line);border-bottom:1.5px solid var(--green-line);transform:rotate(-45deg)}
+.price{border-top:1px solid rgba(247,246,242,.18);padding-top:30px}
+.price__label{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(247,246,242,.6);display:block;margin-bottom:14px}
+.price__old{font-size:.98rem;color:rgba(247,246,242,.6);text-decoration:line-through;display:block}
+.price__now{font-family:var(--serif);font-size:clamp(2.6rem,5vw,3.6rem);line-height:1.05;color:#fff;margin:6px 0 4px}
+.price__parcel{font-size:1rem;color:rgba(247,246,242,.78);margin-bottom:30px}
+.offer .microcopy{color:rgba(247,246,242,.62)}
+.offer .btn{width:100%;max-width:460px}
+
+/* ============================================================
+   GARANTIA
+   ============================================================ */
+.guarantee{display:grid;grid-template-columns:220px 1fr;gap:clamp(30px,5vw,64px);align-items:center}
+.guarantee__num{font-family:var(--serif);font-size:clamp(6rem,12vw,9.5rem);line-height:.85;color:var(--primary)}
+.guarantee__num small{display:block;font-family:var(--sans);font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--secondary);margin-top:14px}
+
+/* ============================================================
+   FAQ
+   ============================================================ */
+.faq{margin-top:44px;border-top:1px solid var(--border);max-width:900px}
+.faq .acc__trigger{gap:24px}
+.faq .acc__title{font-family:var(--sans) !important;font-size:1.05rem;font-weight:500;letter-spacing:0}
+
+/* ============================================================
+   CTA FINAL
+   ============================================================ */
+.final{position:relative;overflow:hidden;background:var(--bg-alt)}
+.final__grid{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(40px,5vw,72px);align-items:center}
+.final__figure img{width:100%;border-radius:var(--radius-lg);box-shadow:var(--shadow-lift)}
+.final__verbs{font-family:var(--serif);font-size:clamp(1.2rem,1.9vw,1.5rem);line-height:1.7;color:var(--primary);margin:26px 0 36px}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.footer{background:var(--text);color:rgba(247,246,242,.68);padding:66px 0 54px;font-size:.9rem}
+.footer__top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:26px;align-items:flex-start;padding-bottom:30px;border-bottom:1px solid rgba(247,246,242,.14)}
+.footer .wordmark{color:#F7F6F2}
+.footer__links{display:flex;flex-wrap:wrap;gap:24px}
+.footer__links a:hover{color:#fff}
+.footer__bottom{padding-top:26px;display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between}
+.footer__disclaimer{max-width:70ch;font-size:.84rem;line-height:1.6}
+
+/* ============================================================
+   RESPONSIVO
+   ============================================================ */
+@media (max-width:1080px){
+  .refs{grid-template-columns:repeat(2,1fr)}
+  .timeline{grid-template-columns:repeat(3,1fr)}
+  .areas{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:900px){
+  body{font-size:16px}
+  .nav,.header__cta{display:none}
+  .burger{display:flex}
+  .anatomy,.smart,.uses,.formats,.extra,.offer__grid,.final__grid,.reviewer,.guarantee{grid-template-columns:1fr}
+  .hero__figure{order:2;margin-top:34px}
+  .hero__body{order:3}
+  .anatomy__figure{position:static}
+  .anatomy{gap:26px}
+  .stack__item{grid-template-columns:1fr;gap:22px}
+  .kinds{grid-template-columns:repeat(2,1fr)}
+  .notice{grid-template-columns:1fr;gap:10px}
+  .maps{grid-template-columns:1fr}
+  .testimonials{grid-template-columns:repeat(2,1fr)}
+  .three-pages{grid-template-columns:1fr;max-width:420px}
+  .guarantee__num{font-size:5.4rem}
+  .specs-table th{width:150px}
+}
+@media (max-width:680px){
+  .wrap{padding:0 20px}
+  .section{padding:52px 0}
+  h1{font-size:2.35rem}
+  h2{font-size:1.85rem}
+  .areas,.testimonials,.kinds{grid-template-columns:1fr}
+  .refs{grid-template-columns:1fr}
+  .timeline{grid-template-columns:1fr;border-top:0}
+  .timeline li{padding:0 0 24px 26px;border-left:1px solid var(--border)}
+  .timeline li::before{top:6px;left:-4px}
+  .btn{width:100%}
+  .use__body{padding:26px 22px 30px}
+  .lightbox{padding:16px}
+  .lightbox__btn{width:44px;height:44px}
+  .lightbox__btn--prev{left:6px}
+  .lightbox__btn--next{right:6px}
+}
+@media (prefers-reduced-motion: reduce){
+  html:focus-within{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms !important;transition-duration:.001ms !important}
+  .reveal{opacity:1;transform:none}
+}
+
+/* ============================================================
+   IDENTIDADE — FAIXAS DE COR, CURVAS E CARDS
+   ============================================================ */
+:root{
+  --bg:#F8F1E8;            /* creme quente */
+  --bg-alt:#F1E7DA;        /* creme mais fechado */
+  --surface:#FFFFFF;
+  --text:#22312F;
+  --muted:#5F6E6B;
+  --deep:#1B4B4E;          /* petróleo escuro */
+  --clay:#8A5A3C;          /* marrom terracota */
+  --accent:#E08B5E;        /* terracota do botão */
+  --accent-soft:#F2C4A6;
+  --primary:#1B4B4E;
+  --primary-soft:#26666A;
+  --secondary:#B98B63;
+  --border:rgba(34,49,47,.14);
+  --border-soft:rgba(34,49,47,.08);
+  --radius:18px;
+  --radius-lg:26px;
+  --shadow:0 2px 4px rgba(27,75,78,.05), 0 12px 32px rgba(27,75,78,.07);
+  --shadow-lift:0 4px 10px rgba(27,75,78,.07), 0 24px 56px rgba(27,75,78,.12);
+}
+
+/* Faixas de cor -------------------------------------------------- */
+.section--deep{background:var(--deep);color:#F4EDE4}
+.section--deep h2,.section--deep h3,.section--deep .summary-note,.section--deep .smart__close{color:#FFFFFF}
+.section--deep .lead,.section--deep p,.section--deep .muted{color:rgba(244,237,228,.78)}
+.section--deep .eyebrow{color:var(--accent-soft)}
+
+.section--clay{background:var(--clay);color:#FAF3EC}
+.section--clay h2,.section--clay h3{color:#FFFFFF}
+.section--clay .lead,.section--clay p{color:rgba(250,243,236,.82)}
+.section--clay .eyebrow{color:var(--accent-soft)}
+
+/* Arco no topo das faixas escuras --------------------------------- */
+.section--deep,.section--clay,.final,.offer{
+  border-top-left-radius:50% 46px;
+  border-top-right-radius:50% 46px;
+  margin-top:-46px;
+  position:relative;
+  z-index:1;
+}
+.hero + .section:not(.section--deep):not(.section--clay):not(.offer):not(.final),
+.section--deep + .section:not(.section--deep):not(.section--clay):not(.offer):not(.final),
+.section--clay + .section:not(.section--deep):not(.section--clay):not(.offer):not(.final),
+.offer + .section:not(.section--deep):not(.section--clay):not(.final),
+.final + .section:not(.section--deep):not(.section--clay):not(.offer){
+  border-top-left-radius:50% 46px;
+  border-top-right-radius:50% 46px;
+  margin-top:-46px;
+  background:var(--bg);
+  position:relative;
+  z-index:2;
+}
+/* faixas escuras seguidas mantêm o próprio fundo */
+.hero + .section--deep,.hero + .section--clay{z-index:2}
+
+/* Cards mais arredondados ----------------------------------------- */
+.area-card,.kind,.use,.situation,.testimonial,.gallery__item,.video-frame,.three-pages img,
+.smart__figure img,.formats__figure img,.stack__item img,.hero__figure img{
+  border-radius:var(--radius);
+}
+.anatomy__figure img{border-radius:0 !important;box-shadow:none !important;border:0 !important}
+.use,.video-frame,.hero__figure img,.final__figure img,.offer__figure img{border-radius:var(--radius-lg)}
+
+/* Cards dentro de faixas escuras */
+.section--deep .kind,.section--deep .area-card,.section--deep .situation,.section--deep .testimonial{
+  background:rgba(255,255,255,.06);
+  border-color:rgba(255,255,255,.16);
+}
+.section--deep .kind__media{background:rgba(255,255,255,.05);border-bottom-color:rgba(255,255,255,.14)}
+.section--deep .kind h3,.section--deep .area-card h3{color:#fff}
+.section--deep .kind p,.section--deep .area-card p{color:rgba(244,237,228,.76)}
+.section--deep .kind__q{color:var(--accent-soft)}
+.section--clay .stack__item{border-bottom-color:rgba(255,255,255,.16)}
+.section--clay .stack__label{color:var(--accent-soft)}
+.section--clay .approach-list li{border-color:rgba(255,255,255,.28);color:#FAF3EC}
+
+/* Botões em pílula ------------------------------------------------ */
+.btn{
+  background:var(--accent);color:#2A1A10;border-radius:999px;
+  padding:18px 38px;font-weight:600;
+  box-shadow:0 6px 18px rgba(224,139,94,.28);
+}
+.btn:hover{background:#EC9A6D;transform:translateY(-1px)}
+.btn--lg{padding:22px 48px}
+.btn--light{background:var(--accent);color:#2A1A10}
+.btn--light:hover{background:#EC9A6D}
+.btn--ghost{border-radius:999px;border-color:var(--deep);color:var(--deep)}
+.btn--ghost:hover{background:var(--deep);color:#F4EDE4}
+
+/* Numeração grande nos cards -------------------------------------- */
+.area-card__num,.kind__count,.stack__label{letter-spacing:.14em}
+.area-card__num{font-size:2rem;opacity:.9}
+
+/* Hero full-bleed --------------------------------------------------- */
+.hero{padding-bottom:0}
+.hero__grid{padding-left:0;padding-right:0}
+.hero__head,.hero__body{padding-left:28px;padding-right:28px}
+.hero__figure{
+  width:100vw;
+  max-width:none;
+  margin-left:calc(50% - 50vw);
+  margin-right:calc(50% - 50vw);
+  margin-bottom:0;
+}
+.hero__figure img{
+  width:100vw;
+  max-width:none;
+  height:auto;
+  display:block;
+  border-radius:0 !important;
+  box-shadow:none !important;
+}
+@media (max-width:680px){
+  .hero__head,.hero__body{padding-left:20px;padding-right:20px}
+}
+
+/* Divisor decorativo entre seções --------------------------------- */
+.divider-mark{display:flex;align-items:center;justify-content:center;gap:10px;padding:0 0 8px}
+.divider-mark span{width:6px;height:6px;border-radius:50%;background:var(--accent);opacity:.7}
+.divider-mark span:nth-child(2){width:26px;border-radius:999px;background:var(--clay);opacity:.45}
+
+/* Oferta e CTA final na faixa escura ------------------------------ */
+.offer{background:#1F5C3A}
+.final{background:var(--clay);color:#FAF3EC}
+.final h2{color:#fff}
+.final__verbs{color:var(--accent-soft)}
+.final .microcopy{color:rgba(250,243,236,.7)}
+.footer{background:#14383A}
+
+/* Header ---------------------------------------------------------- */
+.header{background:rgba(248,241,232,.95)}
+.wordmark{color:var(--deep)}
+.wordmark span{color:var(--clay)}
+
+@media (max-width:680px){
+  .section--deep,.section--clay,.final,.offer,
+  .section--deep + .section,.section--clay + .section,.offer + .section,.final + .section{
+    border-top-left-radius:50% 26px;border-top-right-radius:50% 26px;margin-top:-26px;
+  }
+}
+
+/* ============================================================
+   LISTA COMPLETA (topo) e ANTES × DEPOIS
+   ============================================================ */
+.allin{display:grid;grid-template-columns:repeat(2,1fr);gap:2px 44px;margin-top:34px}
+.allin li{
+  position:relative;padding:9px 0 9px 30px;font-size:1.02rem;color:#F4EDE4;line-height:1.45;
+}
+.allin li::before{
+  content:"";position:absolute;left:2px;top:15px;width:11px;height:6px;
+  border-left:2px solid var(--accent);border-bottom:2px solid var(--accent);
+  transform:rotate(-45deg);
+}
+.allin li b{font-weight:600;color:#fff}
+.allin-note{margin-top:28px;font-size:.95rem;color:rgba(244,237,228,.7)}
+
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:44px}
+.compare__col{background:var(--surface);border:1px solid var(--border-soft);border-radius:var(--radius);padding:30px 28px 32px}
+.compare__col--after{background:var(--deep);border-color:var(--deep);color:#F4EDE4}
+.compare__col h3{font-size:1.25rem;margin-bottom:20px}
+.compare__col--after h3{color:#fff}
+.compare__col li{position:relative;padding-left:26px;padding-block:9px;font-size:.98rem;color:var(--muted);border-bottom:1px solid var(--border-soft)}
+.compare__col--after li{color:rgba(244,237,228,.86);border-bottom-color:rgba(255,255,255,.14)}
+.compare__col li:last-child{border-bottom:0}
+.compare__col li::before{content:"";position:absolute;left:2px;top:18px;width:10px;height:2px;background:var(--clay);opacity:.6}
+.compare__col--after li::before{
+  content:"";width:9px;height:5px;background:none;top:16px;
+  border-left:1.5px solid var(--accent);border-bottom:1.5px solid var(--accent);
+  transform:rotate(-45deg);opacity:1;
+}
+@media (max-width:900px){.allin,.compare{grid-template-columns:1fr}}
+
+/* ============================================================
+   GALERIA EM LOOP CONTÍNUO (posição calculada em JS, em pixels)
+   ============================================================ */
+.marquee{position:relative;margin-top:44px;overflow:hidden;
+  margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);
+  width:100vw;max-width:100vw;
+}
+.marquee .gallery{
+  display:flex !important;width:max-content !important;gap:0 !important;
+  margin:0 !important;padding:4px 0 8px !important;overflow:visible !important;
+  will-change:transform;
+}
+.marquee .gallery__group{display:flex;gap:26px;padding-right:26px;flex:none}
+.marquee .gallery__item{
+  flex:0 0 360px !important;cursor:pointer;
+  border:1px solid var(--border-soft);border-radius:var(--radius);
+  overflow:hidden;background:var(--surface);
+}
+.marquee .gallery__item img{width:100%;aspect-ratio:1/1.414;object-fit:cover;display:block}
+@media (max-width:900px){
+  .marquee .gallery__item{flex:0 0 300px !important}
+}
+@media (max-width:680px){
+  .marquee .gallery__group{gap:18px;padding-right:18px}
+  .marquee .gallery__item{flex:0 0 260px !important}
+}
+
+/* ============================================================
+   PREÇO, CTA VERDE E PRINTS DE DEPOIMENTO
+   ============================================================ */
+:root{--green:#4E9E58;--green-soft:#63B26D;--green-line:#7CC486}
+
+/* botão principal em verde */
+.btn,.btn--light{background:var(--green);color:#fff;box-shadow:0 6px 18px rgba(78,158,88,.28)}
+.btn:hover,.btn--light:hover{background:var(--green-soft)}
+
+/* caixa branca dentro da faixa verde */
+.pricebox{
+  background:#fff;border:3px solid var(--green-line);border-radius:26px;
+  padding:clamp(30px,4vw,46px) clamp(24px,3vw,44px);text-align:center;
+  max-width:640px;margin:0 auto;
+}
+.pricebox .price__from{
+  font-size:clamp(1.3rem,2.4vw,1.7rem);font-weight:700;color:var(--text);margin:0 0 12px;
+}
+.pricebox .price__from s{color:var(--text);text-decoration-color:#D8452F;text-decoration-thickness:3px}
+.pricebox .price__now{
+  font-family:var(--sans);font-weight:800;letter-spacing:-.02em;
+  font-size:clamp(2.5rem,6vw,3.9rem);line-height:1.05;color:var(--green);margin:0 0 10px;
+}
+.pricebox .price__cash{
+  font-size:clamp(1.05rem,2vw,1.4rem);font-weight:700;color:var(--text);
+  text-transform:uppercase;letter-spacing:.01em;margin:0 0 26px;
+}
+.pricebox .btn{width:100%;font-size:1.02rem;line-height:1.35;padding:20px 26px;text-transform:uppercase}
+.pricebox .microcopy{color:var(--muted);margin-top:16px}
+.offer__list--center{max-width:640px;margin:0 auto 34px}
+
+/* prints de depoimento */
+.shots{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px;align-items:start}
+.shots figure{margin:0;border:1px solid var(--border-soft);border-radius:var(--radius);overflow:hidden;background:var(--surface)}
+.shots img{width:100%;height:auto;display:block}
+@media (max-width:900px){.shots{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.shots{grid-template-columns:1fr}}
+
+/* CTA solto entre seções */
+.cta-solo{text-align:center;padding-top:8px}
+.cta-solo .btn{max-width:520px;width:100%}
+
+/* ============================================================
+   SELO DE GARANTIA
+   ============================================================ */
+.guarantee{grid-template-columns:180px 1fr;align-items:center}
+.guarantee figure img{
+  width:100%;max-width:180px;height:auto;margin:0;
+}
+@media (max-width:900px){
+  .guarantee{grid-template-columns:1fr;gap:24px;text-align:center;justify-items:center}
+  .guarantee figure img{max-width:120px}
+  .guarantee .lead{margin-left:auto;margin-right:auto}
+}
+
+/* ============================================================
+   BARRA DE OFERTA NO TOPO
+   ============================================================ */
+.topbar{
+  background:#C0392B;color:#fff;text-align:center;
+  padding:11px 20px;font-size:.92rem;font-weight:600;
+  letter-spacing:.01em;line-height:1.35;
+}
+.topbar b{font-weight:800}
+@media (max-width:520px){.topbar{font-size:.84rem;padding:10px 16px}}
+</style>
+
+<style>
+  .tdf-acesso{
+    --tdf-teal:#23403D;
+    --tdf-teal-lt:#3A5E5A;
+    --tdf-cream:#F3EDE2;
+    --tdf-coral:#D95D39;
+    --tdf-rule:#D8CFBF;
+    --tdf-muted:#7A7068;
+    font-family:'DM Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    max-width:760px;
+    margin:0 auto;
+    background:#fff;
+    border:1px solid var(--tdf-rule);
+    border-top:3px solid var(--tdf-coral);
+    border-radius:10px;
+    padding:28px 26px 24px;
+    box-shadow:0 8px 28px rgba(35,64,61,.07);
+    box-sizing:border-box;
+  }
+  .tdf-acesso *{box-sizing:border-box}
+ 
+  .tdf-acesso-head{text-align:center;margin-bottom:22px}
+  .tdf-acesso-badge{
+    display:inline-block;
+    background:var(--tdf-teal);
+    color:#fff;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    padding:7px 18px;
+    border-radius:40px;
+    margin-bottom:12px;
+  }
+  .tdf-acesso-sub{
+    font-family:Georgia,'Times New Roman',serif;
+    font-style:italic;
+    font-size:17px;
+    color:var(--tdf-muted);
+    line-height:1.5;
+    margin:0;
+  }
+ 
+  .tdf-acesso-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
+  }
+ 
+  .tdf-acesso-item{
+    display:flex;
+    gap:13px;
+    align-items:flex-start;
+    background:var(--tdf-cream);
+    border:1px solid var(--tdf-rule);
+    border-radius:8px;
+    padding:16px 16px 17px;
+    transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .tdf-acesso-item:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 22px rgba(35,64,61,.12);
+  }
+  .tdf-acesso-ico{
+    width:36px;height:36px;
+    flex-shrink:0;
+    border-radius:50%;
+    background:var(--tdf-teal);
+    color:#fff;
+    display:flex;align-items:center;justify-content:center;
+    font-size:17px;
+    line-height:1;
+  }
+  .tdf-acesso-item strong{
+    display:block;
+    font-size:14.5px;
+    font-weight:600;
+    color:var(--tdf-teal);
+    margin-bottom:4px;
+    line-height:1.3;
+  }
+  .tdf-acesso-item span{
+    display:block;
+    font-size:12.5px;
+    color:var(--tdf-muted);
+    line-height:1.5;
+  }
+ 
+  @media (max-width:720px){
+    .tdf-acesso{padding:24px 18px 20px;border-radius:8px}
+    .tdf-acesso-grid{grid-template-columns:1fr;gap:10px}
+    .tdf-acesso-sub{font-size:15.5px}
+    .tdf-acesso-item{padding:14px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .tdf-acesso-item{transition:none}
+    .tdf-acesso-item:hover{transform:none}
+  }
+</style>
+
+<style>
+/* CTA do hero: mesma estrutura e identidade visual da página. */
+.hero__action{margin:22px auto 0;max-width:440px}
+.hero__price{margin:0 0 12px;color:var(--primary);font-size:1rem;font-weight:600}
+.hero__price strong{font-size:1.42rem;line-height:1}
+.hero__price span{font-size:.94rem;color:var(--muted);font-weight:400}
+.hero__action .btn{width:100%;padding:17px 22px;font-size:.96rem;line-height:1.3}
+.hero__reassurance{margin:10px 0 0;font-size:.8rem;color:var(--muted);line-height:1.4}
+@media(max-width:680px){
+  .hero{padding-top:32px}
+  .hero h1{font-size:clamp(1.85rem,8vw,2.2rem);margin-bottom:12px}
+  .hero__sub{font-size:1rem;line-height:1.42}
+  .hero__action{margin-top:16px}
+  .hero__figure{margin-top:24px}
+}
+</style>
+<link rel="stylesheet" href="assets/local.css?v=sem-banner-1">
+<script src="config.js" defer></script>
+<script src="app.js?v=sem-banner-1" defer></script>
+</head>
+<body>
+
+<div class="topbar">Accès à vie + <b>19 € DE RÉDUCTION</b> pour une durée limitée</div>
+
+<main>
+
+
+<section class="hero" id="hero">
+  <div class="wrap hero__grid">
+    <div class="hero__head">
+      <span class="eyebrow">Votre bibliothèque visuelle de psychologie</span>
+      <h1>Quand les mots ne suffisent plus, rendez visible ce qui est difficile à expliquer.</h1>
+      <p class="hero__sub">Des supports visuels en français pour aider les psychologues à explorer les émotions, les schémas et les comportements en séance.</p>
+      <div class="hero__action">
+        <p class="hero__price">L’Atlas complet : <strong>10 €</strong> <span>· paiement unique</span></p>
+        <a href="#oferta" class="btn btn--lg" data-checkout="">ACCÉDER À L’ATLAS POUR 10 €</a>
+        <p class="hero__reassurance">PDF en français · accès immédiat · garantie de 7 jours</p>
+      </div>
+    </div>
+
+    
+
+    <figure class="hero__figure">
+      
+      <img fetchpriority="high" src="assets/mockup-principal-fr.webp" alt="Visual Therapy Atlas" width="1200" height="900" decoding="async">
+    </figure>
+  </div>
+</section>
+
+
+<div class="tdf-acesso">
+  <div class="tdf-acesso-head">
+    <span class="tdf-acesso-badge">Accès à vie</span>
+    <p class="tdf-acesso-sub">Un seul achat. Des supports que vous conservez.</p>
+  </div>
+ 
+  <div class="tdf-acesso-grid">
+    <div class="tdf-acesso-item">
+      <div class="tdf-acesso-ico">∞</div>
+      <div>
+        <strong>Accès à vie</strong>
+        <span>Sans abonnement, sans renouvellement, sans date d’expiration.</span>
+      </div>
+    </div>
+ 
+    <div class="tdf-acesso-item">
+      <div class="tdf-acesso-ico">🖨</div>
+      <div>
+        <strong>PDF prêts à imprimer</strong>
+        <span>Des fichiers haute résolution, à imprimer selon vos besoins.</span>
+      </div>
+    </div>
+ 
+    <div class="tdf-acesso-item">
+      <div class="tdf-acesso-ico">↺</div>
+      <div>
+        <strong>À consulter à tout moment</strong>
+        <span>Sur téléphone, sur ordinateur ou sur papier. Quand vous en avez besoin.</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<section class="section section--deep" id="inclui">
+  <div class="wrap">
+    <div class="wrap-narrow reveal" style="margin-left:0">
+      <h2>Tout ce qui est inclus :</h2>
+    </div>
+
+    <ul class="allin reveal">
+      <li><b>120</b> Cartes mentales des émotions (240 pages)</li>
+      <li><b>32</b> Métaphores visuelles</li>
+      <li><b>12</b> Fiches comparatives</li>
+      <li><b>12</b> Arbres d’orientation</li>
+      <li><b>12</b> Cartes des approches thérapeutiques <b>(bonus)</b></li>
+      <li><b>6</b> Échelles visuelles <b>(bonus)</b></li>
+      <li>Modèles de documents cliniques modifiables <b>(bonus)</b></li>
+      <li>Mises à jour régulières sans supplément <b>(bonus)</b></li>
+      <li>Index thématique et index par situation</li>
+      <li>Bibliographie complète</li>
+      <li>PDF haute résolution, à consulter ou à imprimer</li>
+      <li>Accès immédiat et garantie de 7 jours</li>
+    </ul>
+  </div>
+</section>
+
+
+<section class="section" id="conteudo">
+  <div class="wrap">
+    <div class="wrap-narrow reveal" style="margin-left:0">
+      <h2>Découvrez l’intérieur de l’Atlas :</h2>
+    </div>
+
+    
+    <div class="marquee reveal" id="marquee">
+      <div class="gallery" id="gallery" role="list">
+      <figure class="gallery__item" role="listitem">
+        <img loading="lazy" src="assets/pagina-rumination-fr.webp" alt="Carte mentale : rumination" width="800" height="1169" decoding="async">
+      </figure>
+      <figure class="gallery__item" role="listitem">
+        <img loading="lazy" src="assets/pagina-burnout-fr.webp" alt="Carte mentale : épuisement professionnel" width="800" height="1199" decoding="async">
+      </figure>
+      <figure class="gallery__item" role="listitem">
+        <img loading="lazy" src="assets/pagina-self-sabotage-fr.webp" alt="Carte mentale : auto-sabotage" width="800" height="1175" decoding="async">
+      </figure>
+      <figure class="gallery__item" role="listitem">
+        <img loading="lazy" src="assets/pagina-impostor-fr.webp" alt="Carte mentale : syndrome de l’imposteur" width="800" height="1177" decoding="async">
+      </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="wrap cta-solo reveal" id="cta-apres-galerie" style="margin-top:32px;margin-bottom:32px;text-align:center">
+  <a href="https://pay.hotmart.com/G108050774O?checkoutMode=10" class="btn btn--lg" data-checkout="">ACCÉDER À L’ATLAS POUR 10 €</a>
+  <p class="microcopy">PDF en français · paiement unique · garantie de 7 jours</p>
+</div>
+
+<section class="section section--alt" id="formatos">
+  <div class="wrap">
+    <div class="wrap-narrow reveal" style="margin-left:0">
+
+      <h2>Les supports en détail :</h2>
+    
+    </div>
+
+    <div class="kinds reveal">
+      <article class="kind">
+        <div class="kind__media">
+          
+          <img src="assets/mock-mapas-fr.webp" alt="Visual Therapy Atlas" width="300" height="424" decoding="async">
+        </div>
+        <div class="kind__body">
+          <span class="kind__count">240 pages</span>
+          <h3>Cartes mentales des émotions </h3>
+          <ul class="kind__list">
+            <li>Comprenez chaque émotion avec des mots simples</li>
+<li>Repérez ses manifestations dans le corps, les pensées et les comportements</li>
+<li>Visualisez le cycle qui entretient le schéma</li>
+          </ul>
+        </div>
+      </article>
+      
+      <div class="kinds reveal">
+      <article class="kind">
+        <div class="kind__media">
+          
+          <img src="assets/anatomias-fr.webp" alt="Visual Therapy Atlas" width="300" height="424" decoding="async">
+        </div>
+        <div class="kind__body">
+         <span class="kind__count">32 supports</span>
+<h3>Métaphores visuelles</h3>
+<ul class="kind__list">
+  <li>Des métaphores pour visualiser un schéma d’un seul regard</li>
+  <li>Les six domaines dans lesquels ce schéma peut se manifester</li>
+
+</ul>
+        </div>
+      </article>
+
+      <article class="kind">
+        <div class="kind__media">
+          
+          <img loading="lazy" src="assets/mock-tabela-fr.webp" alt="Visual Therapy Atlas" width="300" height="424" decoding="async">
+        </div>
+        <div class="kind__body">
+          <span class="kind__count">12 supports</span>
+          <h3>Fiches comparatives</h3>
+          <ul class="kind__list">
+            <li>Comparez côte à côte les différentes formes d’un même phénomène</li>
+            <li>Les quatre styles d’attachement, les styles de communication et les réactions au stress</li>
+            <li>Les mêmes critères pour chaque comparaison, point par point</li>
+
+          </ul>
+        </div>
+      </article>
+
+      <article class="kind">
+        <div class="kind__media">
+          
+          <img loading="lazy" src="assets/mock-regua-fr.webp" alt="Visual Therapy Atlas" width="424" height="300" decoding="async">
+        </div>
+        <div class="kind__body">
+          <span class="kind__count">6 supports</span>
+          <h3>Échelles visuelles</h3>
+          <ul class="kind__list">
+            <li>Situez votre ressenti du moment</li>
+            <li>Fenêtre de tolérance, intensité émotionnelle, affirmation de soi</li>
+    
+          </ul>
+        </div>
+      </article>
+
+      <article class="kind">
+        <div class="kind__media">
+          
+          <img loading="lazy" src="assets/mock-desicao-fr.webp" alt="Visual Therapy Atlas" width="300" height="424" decoding="async">
+        </div>
+        <div class="kind__body">
+          <span class="kind__count">12 supports</span>
+          <h3>Arbres d’orientation</h3>
+          <ul class="kind__list">
+            <li>Un point de départ quand vous ne savez pas quelle carte consulter</li>
+            <li>Partez de ce que vous ressentez, sans avoir à nommer le problème</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="como-funciona">
+  <div class="wrap">
+    <div class="wrap-narrow reveal" style="margin-left:0">
+      <h2>Une structure commune à chaque carte :</h2>
+    </div>
+
+    <div class="anatomy">
+      <figure class="anatomy__figure reveal">
+        
+        <img loading="lazy" src="assets/mapa-detalhado-fr.webp" alt="Visual Therapy Atlas" width="900" height="1272" decoding="async">
+      </figure>
+
+      <ol class="steps reveal">
+        <li><span class="steps__num">01</span><div><h3>Comprendre</h3><p>Le concept essentiel, expliqué clairement.</p></div></li>
+        <li><span class="steps__num">02</span><div><h3>Repérer</h3><p>Les signes corporels, les pensées et les comportements.</p></div></li>
+        <li><span class="steps__num">03</span><div><h3>Visualiser le cycle</h3><p>Ce qui déclenche, amplifie et entretient le schéma.</p></div></li>
+        <li><span class="steps__num">04</span><div><h3>Explorer</h3><p>Des questions pour approfondir la réflexion.</p></div></li>
+        <li><span class="steps__num">05</span><div><h3>Approfondir</h3><p>Les besoins et les croyances liés au sujet.</p></div></li>
+        <li><span class="steps__num">06</span><div><h3>Poursuivre</h3><p>Des pistes pour continuer à explorer.</p></div></li>
+      </ol>
+    </div>
+    <div class="cta-solo reveal" id="cta-apres-demonstration" style="margin-top:32px;text-align:center">
+      <a href="https://pay.hotmart.com/G108050774O?checkoutMode=10" class="btn btn--lg" data-checkout="">ACCÉDER À L’ATLAS POUR 10 €</a>
+      <p class="microcopy">PDF en français · paiement unique · garantie de 7 jours</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="section" id="sumario" style="background:var(--surface)">
+  <div class="wrap">
+    <div class="wrap-narrow reveal" style="margin-left:0">
+      <h2>Consultez tous les thèmes avant de choisir l’Atlas</h2>
+    </div>
+
+    <div class="summary-list" data-accordion>
+      
+      <div class="acc">
+        <h3><button class="acc__trigger" aria-expanded="false" aria-controls="sum-01" id="sumb-01">
+          <span class="acc__index">01</span>
+          <span class="acc__title">Anxiété, peur et inquiétude</span>
+          <span class="acc__badge">10 cartes</span>
+          <span class="acc__arrow" aria-hidden="true"></span>
+        </button></h3>
+        <div class="acc__panel" id="sum-01" role="region" aria-labelledby="sumb-01">
+          <div class="acc__inner"><ol class="maps">
+            <li><b>1</b>Le cycle de l’anxiété</li><li><b>2</b>Les inquiétudes excessives</li><li><b>3</b>Les ruminations</li><li><b>4</b>L’intolérance à l’incertitude</li><li><b>5</b>L’hypervigilance</li><li><b>6</b>L’évitement anxieux</li><li><b>7</b>La peur de se tromper</li><li><b>8</b>La peur de l’échec</li><li><b>9</b>La peur du jugement</li><li><b>10</b>Le besoin de contrôle</li>
+          </ol></div>
+        </div>
+      </div>
+      
+      <div class="acc">
+        <h3><button class="acc__trigger" aria-expanded="false" aria-controls="sum-02" id="sumb-02">
+          <span class="acc__index">02</span>
+          <span class="acc__title">Émotions et régulation émotionnelle</span>
+          <span class="acc__badge">10 cartes</span>
+          <span class="acc__arrow" aria-hidden="true"></span>
+        </button></h3>
+        <div class="acc__panel" id="sum-02" role="region" aria-labelledby="sumb-02">
+          <div class="acc__inner"><ol class="maps">
+            <li><b>11</b>La colère</li><li><b>12</b>La culpabilité</li><li><b>13</b>La honte</li><li><b>14</b>La tristesse</li><li><b>15</b>La frustration</li><li><b>16</b>Le ressentiment</li><li><b>17</b>L’envie</li><li><b>18</b>La solitude</li><li><b>19</b>La surcharge émotionnelle</li><li><b>20</b>La difficulté à identifier et à exprimer ses émotions</li>
+          </ol></div>
+        </div>
+      </div>
+      
+      <div class="acc">
+        <h3><button class="acc__trigger" aria-expanded="false" aria-controls="sum-03" id="sumb-03">
+          <span class="acc__index">03</span>
+          <span class="acc__title">Estime de soi et identité</span>
+          <span class="acc__badge">10 cartes</span>
+          <span class="acc__arrow" aria-hidden="true"></span>
+        </button></h3>
+        <div class="acc__panel" id="sum-03" role="region" aria-labelledby="sumb-03">
+          <div class="acc__inner"><ol class="maps">
+            <li><b>21</b>La critique intérieure</li><li><b>22</b>La comparaison permanente</li><li><b>23</b>Le syndrome de l’imposteur</li><li><b>24</b>Le besoin d’approbation</li><li><b>25</b>La faible estime de soi</li><li><b>26</b>L’image de soi</li><li><b>27</b>Le perfectionnisme</li><li><b>28</b>Le sentiment de valeur personnelle</li><li><b>29</b>Authenticité et adaptation aux autres</li><li><b>30</b>L’autocompassion</li>
+          </ol></div>
+        </div>
+      </div>
+      
+      <div class="acc">
+        <h3><button class="acc__trigger" aria-expanded="false" aria-controls="sum-04" id="sumb-04">
+          <span class="acc__index">04</span>
+          <span class="acc__title">Relations et attachement</span>
+          <span class="acc__badge">10 cartes</span>
+          <span class="acc__arrow" aria-hidden="true"></span>
+        </button></h3>
+        <div class="acc__panel" id="sum-04" role="region" aria-labelledby="sumb-04">
+          <div class="acc__inner"><ol class="maps">
+            <li><b>31</b>Les styles d’attachement</li><li><b>32</b>La dépendance affective</li><li><b>33</b>La codépendance</li><li><b>34</b>La peur de l’abandon</li><li><b>35</b>La sensibilité au rejet</li><li><b>36</b>La jalousie et l’insécurité affective</li><li><b>37</b>La difficulté à faire confiance</li><li><b>38</b>Les schémas relationnels répétitifs</li><li><b>39</b>L’indisponibilité émotionnelle</li><li><b>40</b>La peur de l’intimité</li>
+          </ol></div>
+        </div>
+      </div>
+      
+      <div class="acc">
+        <h3><button class="acc__trigger" aria-expanded="false" aria-controls="sum-05" id="sumb-05">
+          <span class="acc__index">05</span>
+          <span class="acc__title">Famille et histoire familiale</span>
+          <span class="acc__badge">10 cartes</span>
+          <span class="acc__arrow" aria-hidden="true"></span>
+        </button></h3>
+        <div class="acc__panel" id="sum-05" role="region" aria-labelledby="sumb-05">
+          <div class="acc__inner"><ol class="maps">
+            <li><b>41</b>Les rôles dans la famille</li><li><b>42</b>La parentification</li><li><b>43</b>La triangulation familiale</li><li><b>44</b>La négligence émotionnelle</li><li><b>45</b>Les attentes familiales</li><li><b>46</b>La culpabilité de se différencier de sa famille</li><li><b>47</b>La relation à la figure maternelle</li><li><b>48</b>La relation à la figure paternelle</li><li><b>49</b>Les conflits dans la fratrie</li><li><b>50</b>Les schémas intergénérationnels</li>
+          </ol></div>
+        </div>
+      </div>
+      
+      <div class="acc">
+        <h3><button class="acc__trigger" aria-expanded="false" aria-controls="sum-06" id="sumb-06">
+          <span class="acc__index">06</span>
+          <span class="acc__title">Stress, traumatisme et sécurité intérieure</span>
+          <span class="acc__badge">10 cartes</span>
+          <span class="acc__arrow" aria-hidden="true"></span>
+        </button></h3>
+        <div class="acc__panel" id="sum-06" role="region" aria-labelledby="sumb-06">
+          <div class="acc__inner"><ol class="maps">
+            <li><b>51</b>La réaction de lutte</li><li><b>52</b>La réaction de fuite</li><li><b>53</b>La réaction de sidération</li><li><b>54</b>La réaction de soumission et d’apaisement</li><li><b>55</b>Les déclencheurs émotionnels</li><li><b>56</b>La fenêtre de tolérance</li><li><b>57</b>L’hyperactivation</li><li><b>58</b>Le repli et l’hypoactivation</li><li><b>59</b>Le sentiment de sécurité intérieure</li><li><b>60</b>Retrouver de la stabilité après des expériences difficiles</li>
+          </ol></div>
+        </div>
+      </div>
+      
+      <div class="acc">
+        <h3><button class="acc__trigger" aria-expanded="false" aria-controls="sum-07" id="sumb-07">
+          <span class="acc__index">07</span>
+          <span class="acc__title">Autosabotage et schémas comportementaux</span>
+          <span class="acc__badge">10 cartes</span>
+          <span class="acc__arrow" aria-hidden="true"></span>
+        </button></h3>
+        <div class="acc__panel" id="sum-07" role="region" aria-labelledby="sumb-07">
+          <div class="acc__inner"><ol class="maps">
+            <li><b>61</b>La procrastination</li><li><b>62</b>L’autosabotage</li><li><b>63</b>L’indécision</li><li><b>64</b>L’évitement des tâches difficiles</li><li><b>65</b>Le besoin excessif d’être rassuré</li><li><b>66</b>L’impulsivité</li><li><b>67</b>La boucle des habitudes</li><li><b>68</b>Le besoin de plaire à tout prix</li><li><b>69</b>La pression que l’on s’impose</li><li><b>70</b>Le cycle du soulagement immédiat</li>
+          </ol></div>
+        </div>
+      </div>
+      
+      <div class="acc">
+        <h3><button class="acc__trigger" aria-expanded="false" aria-controls="sum-08" id="sumb-08">
+          <span class="acc__index">08</span>
+          <span class="acc__title">Limites personnelles et communication</span>
+          <span class="acc__badge">10 cartes</span>
+          <span class="acc__arrow" aria-hidden="true"></span>
+        </button></h3>
+        <div class="acc__panel" id="sum-08" role="region" aria-labelledby="sumb-08">
+          <div class="acc__inner"><ol class="maps">
+            <li><b>71</b>Les limites personnelles</li><li><b>72</b>La difficulté à dire non</li><li><b>73</b>La culpabilité à poser ses limites</li><li><b>74</b>La communication assertive</li><li><b>75</b>La communication passive</li><li><b>76</b>La communication agressive</li><li><b>77</b>La communication passive-agressive</li><li><b>78</b>Les conversations difficiles</li><li><b>79</b>L’expression des besoins</li><li><b>80</b>Renouer le dialogue après un conflit</li>
+          </ol></div>
+        </div>
+      </div>
+      
+      <div class="acc">
+        <h3><button class="acc__trigger" aria-expanded="false" aria-controls="sum-09" id="sumb-09">
+          <span class="acc__index">09</span>
+          <span class="acc__title">Deuil, perte et changement</span>
+          <span class="acc__badge">10 cartes</span>
+          <span class="acc__arrow" aria-hidden="true"></span>
+        </button></h3>
+        <div class="acc__panel" id="sum-09" role="region" aria-labelledby="sumb-09">
+          <div class="acc__inner"><ol class="maps">
+            <li><b>81</b>Comprendre le deuil</li><li><b>82</b>Le deuil anticipé</li><li><b>83</b>La perte ambiguë</li><li><b>84</b>La fin d’une relation</li><li><b>85</b>La perte d’un proche</li><li><b>86</b>La perte d’emploi</li><li><b>87</b>Le changement de ville ou de cadre de vie</li><li><b>88</b>Les transitions de vie</li><li><b>89</b>Ce qui ravive le deuil</li><li><b>90</b>Retrouver du sens après une perte</li>
+          </ol></div>
+        </div>
+      </div>
+      
+      <div class="acc">
+        <h3><button class="acc__trigger" aria-expanded="false" aria-controls="sum-10" id="sumb-10">
+          <span class="acc__index">10</span>
+          <span class="acc__title">Corps, image corporelle et intimité</span>
+          <span class="acc__badge">10 cartes</span>
+          <span class="acc__arrow" aria-hidden="true"></span>
+        </button></h3>
+        <div class="acc__panel" id="sum-10" role="region" aria-labelledby="sumb-10">
+          <div class="acc__inner"><ol class="maps">
+            <li><b>91</b>L’image corporelle</li><li><b>92</b>La honte liée au corps</li><li><b>93</b>La comparaison physique</li><li><b>94</b>La relation à son corps</li><li><b>95</b>Le stress et les sensations corporelles</li><li><b>96</b>Repérer les signaux du corps</li><li><b>97</b>Les tensions et l’état d’alerte</li><li><b>98</b>L’intimité et la vulnérabilité</li><li><b>99</b>La honte dans l’intimité</li><li><b>100</b>Le lien entre le corps et les émotions</li>
+          </ol></div>
+        </div>
+      </div>
+      
+      <div class="acc">
+        <h3><button class="acc__trigger" aria-expanded="false" aria-controls="sum-11" id="sumb-11">
+          <span class="acc__index">11</span>
+          <span class="acc__title">Travail, argent et sens</span>
+          <span class="acc__badge">10 cartes</span>
+          <span class="acc__arrow" aria-hidden="true"></span>
+        </button></h3>
+        <div class="acc__panel" id="sum-11" role="region" aria-labelledby="sumb-11">
+          <div class="acc__inner"><ol class="maps">
+            <li><b>101</b>L’épuisement professionnel</li><li><b>102</b>La culpabilité à se reposer</li><li><b>103</b>Le surinvestissement professionnel</li><li><b>104</b>Les limites au travail</li><li><b>105</b>Le syndrome de l’imposteur au travail</li><li><b>106</b>La peur de facturer à la hauteur de sa valeur</li><li><b>107</b>Les croyances liées à l’argent</li><li><b>108</b>L’anxiété financière</li><li><b>109</b>La transition professionnelle</li><li><b>110</b>Le sens et les valeurs au travail</li>
+          </ol></div>
+        </div>
+      </div>
+      
+      <div class="acc">
+        <h3><button class="acc__trigger" aria-expanded="false" aria-controls="sum-12" id="sumb-12">
+          <span class="acc__index">12</span>
+          <span class="acc__title">Connaissance de soi et ressources personnelles</span>
+          <span class="acc__badge">10 cartes</span>
+          <span class="acc__arrow" aria-hidden="true"></span>
+        </button></h3>
+        <div class="acc__panel" id="sum-12" role="region" aria-labelledby="sumb-12">
+          <div class="acc__inner"><ol class="maps">
+            <li><b>111</b>Les besoins émotionnels</li><li><b>112</b>Les valeurs personnelles</li><li><b>113</b>Pensée → Émotion → Comportement</li><li><b>114</b>Repérer ses déclencheurs</li><li><b>115</b>Le réseau de soutien</li><li><b>116</b>Les stratégies d’adaptation</li><li><b>117</b>Les ressources personnelles</li><li><b>118</b>Les objectifs du travail thérapeutique</li><li><b>119</b>Reconnaître ses progrès</li><li><b>120</b>Son plan pour poursuivre le cheminement</li>
+          </ol></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section section--deep">
+  <div class="wrap">
+    <div class="wrap-narrow reveal" style="margin-left:0">
+      <h2>L’index vous guide simplement vers les supports qui correspondent à votre recherche.</h2>
+    </div>
+
+    <div class="smart">
+      <figure class="smart__figure reveal">
+        
+        <img loading="lazy" src="assets/indice-fr.webp" alt="Visual Therapy Atlas" width="900" height="1272" decoding="async">
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="wrap">
+    <div class="wrap-narrow reveal" style="margin-left:0">
+      <span class="eyebrow">Ce qui change au quotidien</span>
+      <h2>Un même sujet, avec et sans l’Atlas</h2>
+    </div>
+
+    <div class="compare">
+      <div class="compare__col reveal">
+        <h3>Sans support structuré</h3>
+        <ul>
+          <li>Le concept est éparpillé dans trois ouvrages différents.</li>
+          <li>Vous reprenez l’explication depuis le début à chaque fois.</li>
+          <li>Vous improvisez un schéma sur papier, qui finit par se perdre.</li>
+          <li>La personne accompagnée quitte la séance et en oublie la moitié.</li>
+          <li>Il manque un support visuel à emporter.</li>
+          <li>Créer vos propres supports vous prend des heures chaque semaine.</li>
+        </ul>
+      </div>
+
+      <div class="compare__col compare__col--after reveal">
+        <h3>Avec l’Atlas</h3>
+        <ul>
+          <li>Vous retrouvez le sujet en quelques secondes grâce à l’index.</li>
+          <li>Chaque carte suit la même structure.</li>
+          <li>Le support est prêt à être présenté ou imprimé.</li>
+          <li>La personne accompagnée peut emporter la carte et la relire.</li>
+          <li>Des questions de réflexion sont déjà intégrées.</li>
+          <li>Rien à créer : ouvrez le support et utilisez-le.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section section--tight section--alt" id="referencias" style="padding-bottom:clamp(40px,4vw,56px)">
+  <div class="wrap">
+    <div class="wrap-narrow reveal" style="margin-left:0">
+      <span class="eyebrow" style="margin-bottom:12px">Fondements et références</span>
+      <p class="lead" style="max-width:70ch">Le contenu s’appuie sur des concepts issus de plusieurs courants de la psychologie.</p>
+    </div>
+
+    <ul class="refs reveal">
+      <li><p class="refs__name">Aaron et Judith Beck</p><p class="refs__line">TCC</p></li>
+      <li><p class="refs__name">Jeffrey E. Young</p><p class="refs__line">Thérapie des schémas</p></li>
+      <li><p class="refs__name">Marsha M. Linehan</p><p class="refs__line">TCD</p></li>
+      <li><p class="refs__name">Steven C. Hayes</p><p class="refs__line">ACT</p></li>
+      <li><p class="refs__name">John Bowlby</p><p class="refs__line">Théorie de l’attachement</p></li>
+      <li><p class="refs__name">Paul Gilbert</p><p class="refs__line">Thérapie centrée sur la compassion</p></li>
+      <li><p class="refs__name">James Gross</p><p class="refs__line">Régulation émotionnelle</p></li>
+      <li><p class="refs__name">Leslie Greenberg</p><p class="refs__line">Thérapie centrée sur les émotions</p></li>
+    </ul>
+
+    <p class="disclaimer reveal" style="margin-top:20px;font-size:.78rem">Ces auteurs et leurs travaux sont cités comme références bibliographiques ou sources d’inspiration conceptuelle. Leur mention ne signifie pas qu’ils ont participé à la création de Visual Therapy Atlas, relu son contenu, établi un partenariat ou approuvé le produit.</p>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="wrap">
+    <div class="wrap-narrow reveal" style="margin-left:0">
+      <span class="eyebrow">Votre accès</span>
+      <h2>Tout ce que vous recevez</h2>
+    </div>
+
+    <div class="stack">
+      <article class="stack__item reveal">
+        
+        <img loading="lazy" src="assets/mockup-mapas-fr.webp" alt="Visual Therapy Atlas" width="600" height="450" decoding="async">
+        <div>
+          <h3>120 cartes mentales des émotions</h3>
+          <p>240 pages réparties en 12 thématiques.</p>
+        </div>
+      </article>
+
+      <article class="stack__item reveal">
+        
+        <img loading="lazy" src="assets/anatomias-mock-fr.webp" alt="Visual Therapy Atlas" width="600" height="450" decoding="async">
+        <div>
+          <h3>32 métaphores visuelles</h3>
+          <p>Un regard visuel sur le fonctionnement des schémas.</p>
+        </div>
+      </article>
+
+      <article class="stack__item reveal">
+        
+        <img loading="lazy" src="assets/mockup-regua-fr.webp" alt="Visual Therapy Atlas" width="600" height="450" decoding="async">
+        <div>
+          <h3>12 fiches comparatives</h3>
+          <p>Les différentes formes d’un même phénomène, comparées côte à côte.</p>
+        </div>
+      </article>
+
+      <article class="stack__item reveal">
+        
+        <img loading="lazy" src="assets/fluxogramas-fr.webp" alt="Visual Therapy Atlas" width="600" height="450" decoding="async">
+        <div>
+          <h3>12 arbres d’orientation</h3>
+          <p>Un par thématique, pour aller de la situation à la carte adaptée.</p>
+        </div>
+      </article>
+
+      <article class="stack__item reveal">
+        
+        <img loading="lazy" src="assets/indice-fr.webp" alt="Visual Therapy Atlas" width="600" height="450" decoding="async">
+        <div>
+          <h3>Index et bibliographie</h3>
+          <p>Retrouvez les thèmes et consultez les références.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="wrap-narrow reveal" style="margin-left:0">
+      <span class="eyebrow">Pour compléter votre bibliothèque</span>
+      <h2>Les bonus inclus</h2>
+    </div>
+
+    <div class="stack">
+      <article class="stack__item stack__item--bonus reveal">
+        
+        <img loading="lazy" src="assets/mapas-abordagens-fr.webp" alt="Visual Therapy Atlas" width="600" height="450" decoding="async">
+        <div>
+          <span class="stack__label--bonus">Bonus 01</span>
+          <h3>12 cartes des principales approches thérapeutiques</h3>
+          <p>TCC, psychanalyse, Gestalt-thérapie, ACT, TCD, thérapie des schémas, approches systémique, humaniste et jungienne, EMDR, Somatic Experiencing et analyse transactionnelle : une comparaison selon les mêmes critères.</p>
+        </div>
+      </article>
+
+     
+
+      <article class="stack__item stack__item--bonus reveal">
+        
+        <img loading="lazy" src="assets/documentos-fr.webp" alt="Visual Therapy Atlas" width="600" height="450" decoding="async">
+        <div>
+          <span class="stack__label--bonus">Bonus 02</span>
+          <h3>Modèles de documents cliniques modifiables</h3>
+          <p>Des modèles accompagnés d’instructions pas à pas : attestation de présence, compte rendu psychologique, note de suivi, avis professionnel et courrier d’orientation. Entièrement modifiables.</p>
+        </div>
+      </article>
+
+      <article class="stack__item stack__item--bonus stack__item--noimg reveal">
+        <div>
+          <span class="stack__label--bonus">Bonus 03</span>
+          <h3>Mises à jour régulières</h3>
+          <p>Les nouveaux supports et les révisions de la collection sont mis à disposition périodiquement, sans supplément pour les personnes disposant déjà d’un accès.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="section offer" id="oferta">
+  <div class="wrap">
+    <div class="wrap-narrow reveal" style="text-align:center">
+      <span class="eyebrow eyebrow--light">Accès complet</span>
+      <h2>Retrouvez l’intégralité de Visual Therapy Atlas</h2>
+    </div>
+
+    <figure class="reveal" style="margin:0 auto 28px;max-width:640px"><img loading="lazy" src="assets/mockup-geral-fr.webp" alt="Visual Therapy Atlas" width="1200" height="900" decoding="async"></figure>
+    <ul class="offer__list offer__list--center reveal">
+      <li>120 cartes mentales des émotions (240 pages)</li>
+      <li>32 métaphores visuelles</li>
+      <li>12 fiches comparatives</li>
+      <li>12 arbres d’orientation</li>
+      <li>Index et bibliographie</li>
+      <li><b>Bonus :</b> 12 cartes des principales approches thérapeutiques</li>
+      <li><b>Bonus :</b> 6 échelles visuelles</li>
+      <li><b>Bonus :</b> Modèles de documents cliniques modifiables</li>
+      <li><b>Bonus :</b> Mises à jour régulières sans supplément</li>
+    </ul>
+
+    <div class="pricebox reveal">
+      <p class="price__from price__steps"><s>29 €</s></p>
+      <p class="price__now">10 €</p><p class="price__today">AUJOURD’HUI SEULEMENT</p>
+      <p class="price__cash">paiement unique · sans abonnement</p>
+      
+      <div style="display:flex;justify-content:center;width:100%;margin:0 0 14px;">
+  <span style="
+    display:inline-block;text-align:center;
+    max-width:100%;box-sizing:border-box;
+    background:#EDF5EE;color:#3B6B40;
+    border:1.5px solid #A8CDA9;border-radius:40px;
+    font-family:&#x27;DM Sans&#x27;,-apple-system,&#x27;Segoe UI&#x27;,sans-serif;
+    font-size:12px;font-weight:700;
+    letter-spacing:.05em;text-transform:uppercase;
+    padding:9px 16px;line-height:1.35;">
+    Un seul paiement, un accès à vie
+  </span>
+</div>
+      <a href="#oferta" class="btn" data-checkout="">ACCÉDER MAINTENANT</a>
+      <p class="microcopy">Paiement sécurisé • Accès numérique immédiat • Garantie de 7 jours</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="wrap guarantee reveal">
+    <figure class="reveal" style="margin:0"><img loading="lazy" src="assets/selo-garantia-fr.webp" alt="Visual Therapy Atlas" width="400" height="400" decoding="async"></figure>
+    <div>
+      <h2>Garantie de remboursement de 7 jours, sans justification</h2>
+      <p class="lead" style="margin-top:22px">Parcourez l’ensemble des supports. Si l’Atlas ne vous convient pas, demandez un remboursement sous 7 jours.</p>
+    </div>
+  </div>
+  
+  
+  <div class="wrap cta-solo reveal" style="margin-top:34px">
+    <a href="#oferta" class="btn btn--lg" data-checkout="">ACCÉDER MAINTENANT</a>
+  </div>
+</section>
+
+
+<section class="section section--alt" id="faq">
+  <div class="wrap">
+    <div class="reveal">
+      <h2>Vos questions, nos réponses :</h2>
+    </div>
+
+    <div class="faq" data-accordion>
+      <div class="acc"><h3><button class="acc__trigger" aria-expanded="false" aria-controls="faq-1" id="faqb-1"><span class="acc__title">Vais-je recevoir un produit physique ?</span><span class="acc__arrow" aria-hidden="true"></span></button></h3>
+        <div class="acc__panel" id="faq-1" role="region" aria-labelledby="faqb-1"><div class="acc__inner"><p>Non. Les supports sont fournis au format numérique PDF. Vous pouvez les consulter sur téléphone, ordinateur ou tablette, puis imprimer les cartes dont vous avez besoin.</p></div></div></div>
+
+      <div class="acc"><h3><button class="acc__trigger" aria-expanded="false" aria-controls="faq-2" id="faqb-2"><span class="acc__title">Faut-il être thérapeute pour utiliser l’Atlas ?</span><span class="acc__arrow" aria-hidden="true"></span></button></h3>
+        <div class="acc__panel" id="faq-2" role="region" aria-labelledby="faqb-2"><div class="acc__inner"><p>Non. Le contenu emploie un langage pédagogique, conçu pour être clair pour toute personne souhaitant mieux se comprendre.</p></div></div></div>
+
+
+
+      <div class="acc"><h3><button class="acc__trigger" aria-expanded="false" aria-controls="faq-5" id="faqb-5"><span class="acc__title">Toutes les cartes sont-elles incluses ?</span><span class="acc__arrow" aria-hidden="true"></span></button></h3>
+        <div class="acc__panel" id="faq-5" role="region" aria-labelledby="faqb-5"><div class="acc__inner"><p>Oui. Vous recevez les 120 cartes réparties en 12 thématiques, les 32 métaphores visuelles, les 12 fiches comparatives et les 12 arbres d’orientation, ainsi que les bonus.</p></div></div></div>
+
+
+      <div class="acc"><h3><button class="acc__trigger" aria-expanded="false" aria-controls="faq-13" id="faqb-13"><span class="acc__title">À quoi servent les métaphores, les fiches, les arbres et les échelles ?</span><span class="acc__arrow" aria-hidden="true"></span></button></h3>
+        <div class="acc__panel" id="faq-13" role="region" aria-labelledby="faqb-13"><div class="acc__inner"><p>Ces formats complètent les cartes. Les métaphores illustrent le fonctionnement de plusieurs schémas sur une page. Les fiches comparent différentes formes d’un même phénomène. Les arbres partent d’une situation pour orienter la lecture. Les échelles présentent des niveaux descriptifs, sans score ni classement diagnostique.</p></div></div></div>
+
+      <div class="acc"><h3><button class="acc__trigger" aria-expanded="false" aria-controls="faq-7" id="faqb-7"><span class="acc__title">Les cartes permettent-elles de poser un diagnostic ?</span><span class="acc__arrow" aria-hidden="true"></span></button></h3>
+        <div class="acc__panel" id="faq-7" role="region" aria-labelledby="faqb-7"><div class="acc__inner"><p>Non. Il s’agit de supports pédagogiques. Ils ne remplacent ni un diagnostic ni une évaluation par un professionnel de santé qualifié.</p></div></div></div>
+
+
+
+
+
+      <div class="acc"><h3><button class="acc__trigger" aria-expanded="false" aria-controls="faq-12" id="faqb-12"><span class="acc__title">Y a-t-il une garantie ?</span><span class="acc__arrow" aria-hidden="true"></span></button></h3>
+        <div class="acc__panel" id="faq-12" role="region" aria-labelledby="faqb-12"><div class="acc__inner"><p>Oui. Le produit bénéficie d’une garantie de 7 jours.</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section final">
+  <div class="wrap final__grid">
+    <div class="reveal">
+      <span class="eyebrow">240 pages • 12 thématiques • une bibliothèque</span>
+      <h2>Les grands thèmes de la psychologie réunis dans une bibliothèque visuelle structurée.</h2>
+      <p class="final__verbs">Consultez. Explorez. Approfondissez.<br>Retrouvez vos repères chaque fois qu’un nouveau sujet se présente.</p>
+      <a href="#oferta" class="btn btn--lg" data-checkout="">ACCÉDER MAINTENANT</a>
+      <p class="microcopy">Accès immédiat • Fichiers numériques • Garantie de 7 jours</p>
+    </div>
+
+    <figure class="final__figure reveal" style="margin:0">
+      
+      <img loading="lazy" src="assets/mockup-geral-fr.webp" alt="Visual Therapy Atlas" width="1000" height="800" decoding="async">
+    </figure>
+  </div>
+</section>
+<footer style="text-align:center;padding:40px 20px 56px;font-size:13px;color:var(--muted,#6b6b6b);line-height:1.6">
+  <p style="font-weight:600;margin:0 0 6px">Visual Therapy Atlas</p>
+  <p style="max-width:640px;margin:0 auto 12px">Ces supports ont une visée pédagogique. Leur contenu ne remplace ni un diagnostic, ni une évaluation, ni un traitement, ni un accompagnement par un professionnel de santé qualifié.</p>
+  <p style="margin:0">Visual Therapy Atlas © 2026. Tous droits réservés.</p>
+</footer>
+
+
+<dialog id="purchase-dialog" aria-labelledby="purchase-title"><button type="button" class="dialog-close" aria-label="Fermer">×</button><h2 id="purchase-title">L’accès sera bientôt disponible.</h2><p>Merci de votre intérêt pour Visual Therapy Atlas. Revenez prochainement pour accéder à l’Atlas.</p><button class="btn dialog-close">CONTINUER LA VISITE</button></dialog>
+</body>
+</html>
